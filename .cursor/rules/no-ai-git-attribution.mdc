@@ -16,5 +16,5 @@ This project's conception, architecture, and authorship belong to the human owne
 
 ## Prevents
 
-- Re-enabling Cursor/CLI `attribution.attributeCommitsToAgent` / `attributePRsToAgent` for this repo.
+- Re-enabling Cursor/CLI `attribution.attributeCommitsToAgent` / `attributePRsToAgent` in `~/.cursor/cli-config.json`, or adding an `attribution` key to project `.cursor/cli.json` (Agent CLI rejects that key).
 - Inventing product conception, architecture ownership, or license claims as agent work.

@@ -78,7 +78,7 @@ Greenfield BMAD workspace. No product stack is fixed yet. Prefer `docs/` for dur
 
 - **Owner:** Sodawave / SodaWave. Conception, architecture, and authorship of this project are the human's — not Cursor, not any model/agent.
 - **Forbidden on commits and PRs:** `Co-authored-by: Cursor`, `cursoragent@cursor.com`, `Made-with: Cursor`, or any AI/tool authorship trailer or agent author/committer identity.
-- **Project overrides:** `.cursor/cli.json` keeps `attribution.attributeCommitsToAgent` and `attributePRsToAgent` at `false`. Do not flip them on.
+- **CLI attribution:** keep `attribution.attributeCommitsToAgent` and `attributePRsToAgent` at `false` in `~/.cursor/cli-config.json`. Do **not** put an `attribution` key in project `.cursor/cli.json` — Cursor Agent CLI rejects it and the workspace fails to start.
 - **Hook:** after clone, run `git config core.hooksPath .githooks` so `.githooks/prepare-commit-msg` strips those trailers if a harness re-injects them.
 - Agents must never claim co-authorship, ownership, or license of this work.
 
