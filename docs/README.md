@@ -5,7 +5,7 @@ Long-term documentation lives here (`bmm.project_knowledge = docs`).
 ## Suggested first artifacts
 
 - `OVERVIEW.md` — session-autoload project summary (identity, status, audience); keep current
-- Architecture decision records (ADRs) after the first spine is adopted
+- Architecture decision records (ADRs) — ADR-001 (coding standard) is already recorded; further ADRs follow each adopted spine
 - Glossary and domain notes once a product exists
 - Runbooks verified against real commands
 

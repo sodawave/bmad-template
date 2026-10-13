@@ -40,6 +40,9 @@ coverage/
 _bmad/config.user.toml
 _bmad/custom/config.user.toml
 
+# Copyrighted reference material (local-only, not committed)
+docs/Clean Architecture A Craftsman Guide to Software Structure and Design.pdf
+
 # Logs
 *.log
 npm-debug.log*
