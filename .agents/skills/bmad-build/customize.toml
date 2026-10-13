@@ -40,7 +40,7 @@ on_complete = ""
 # {project-root} and {spec_file} are substituted at run time.
 #
 # VS Code and compatible GUI editors — a custom override can use `code`; Cursor,
-# Windsurf, Antigravity, Zed, and similar editors can use their own launcher.
+# Windsurf, Zed, and similar editors can use their own launcher.
 # Preserve reuse-window behavior when the launcher supports it, and always pass
 # the repository root first and the spec second:
 #   Run `code -r "{project-root}" "{spec_file}"`, root first.

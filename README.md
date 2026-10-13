@@ -10,9 +10,8 @@ Clean-slate repository scaffolded for **BMad Method** multi-agent development. P
 | `docs/` | Long-term project knowledge (`bmm.project_knowledge`) |
 | `_bmad/` | BMad Method modules (BMM, CIS, TEA) |
 | `_bmad-output/` | Planning, implementation, and test artifacts (English) |
-| `.agents/skills/` | Cursor / OpenCode / Pi / Antigravity CLI skills |
+| `.agents/skills/` | Cursor / OpenCode / Pi shared skills |
 | `.claude/skills/` | Claude Code skills |
-| `.agent/skills/` | Google Antigravity skills |
 | `.opencode/commands/` | OpenCode command bindings |
 | `IGNITE.md` | Ignition protocol — mandatory entry point before any planned work |
 | `AGENTS.md` | Process rules for coding agents |
@@ -21,7 +20,7 @@ Clean-slate repository scaffolded for **BMad Method** multi-agent development. P
 
 - Node.js 20.12+
 - [uv](https://docs.astral.sh/uv/) (required by BMAD Python skills)
-- A supported AI coding tool (Cursor, Claude Code, OpenCode, Antigravity, or Pi)
+- A supported AI coding tool (Cursor, Claude Code, OpenCode, or Pi)
 
 ## Get started
 
