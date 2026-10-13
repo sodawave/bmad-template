@@ -4,7 +4,7 @@ Session-autoload file — every agent reads this (plus `docs/ADR.md` and `README
 
 - **Product:** undefined — greenfield BMAD workspace template. A product is adopted via BMAD planning; implementation then lands under `src/`.
 - **Audience / rigor:** launch-grade. Verify assumptions against the repo; prefer evidence over claims.
-- **Status:** clean slate — no stack, no architecture decisions, no runtime code (`src/` holds stubs only).
+- **Status:** clean slate — no product stack, no product architecture (workspace coding standard: Clean Architecture, ADR-001), no runtime code (`src/` holds stubs only).
 - **Language:** chat may be Spanish; this file and all BMAD artifacts are English.
 
 ## Where truth lives

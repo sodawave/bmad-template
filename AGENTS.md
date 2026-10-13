@@ -48,6 +48,18 @@ Default flow: **work branch → test with evidence → human OK → merge to `de
 - Double-confirm large/irreversible steps with the human.
 - Never claim success, existence, or test results without verifying in the current session.
 
+## Code architecture standard (mandatory)
+
+All product code must be implemented according to **Clean Architecture** — *Clean Architecture: A Craftsman's Guide to Software Structure and Design* (Robert C. Martin). Canonical local copy: `docs/Clean Architecture A Craftsman Guide to Software Structure and Design.pdf`. Decision record: `docs/ADR.md` (ADR-001).
+
+Binding rules:
+
+- **Dependency rule:** source-code dependencies point **inward** only — Enterprise Core ← Application Business Rules ← Interface Adapters ← Frameworks & Drivers. No inner layer may reference an outer one.
+- **Core stays pure:** enterprise business rules and use cases contain no framework, database, UI, or I/O references.
+- **Invert dependencies at the boundary:** outer adapters (controllers, presenters, gateways, proxies) implement interfaces owned by inner layers; concretions never leak inward.
+- **Frameworks and drivers are details:** UI, DB, web, and third-party SDKs live in the outermost ring and must remain replaceable without touching the core.
+- Every implementation story verifies the dependency rule (import/dependency check or review checklist) before claiming evidence.
+
 ## Process
 
 - Prefer BMAD Cursor skills (start with `bmad-help`, then agents and workflows) for product work.
