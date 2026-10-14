@@ -2,9 +2,9 @@
 
 Session-autoload file — every agent reads this (plus `docs/ADR.md` and `README.md`) before taking any task. See "Session autoload" in `AGENTS.md`.
 
-- **Product:** undefined — greenfield BMAD workspace template. A product is adopted via BMAD planning; implementation then lands under `src/`.
+- **Product:** Video-to-Artifact Platform (MVP) — first product adopted via BMAD idea gate. ADR-002 defines scope: Voice/Text extraction from video → text artifact. Implementation lands under `src/`.
 - **Audience / rigor:** launch-grade. Verify assumptions against the repo; prefer evidence over claims.
-- **Status:** clean slate — no product stack, no product architecture (workspace coding standard: Clean Architecture, ADR-001), no runtime code (`src/` holds stubs only).
+- **Status:** product adopted — Video-to-Artifact Platform MVP (ADR-002), workspace coding standard: Clean Architecture (ADR-001). No runtime code yet (`src/` holds stubs only); planning artifacts begin under `_bmad-output/`.
 - **Language:** chat may be Spanish; this file and all BMAD artifacts are English.
 
 ## Where truth lives
